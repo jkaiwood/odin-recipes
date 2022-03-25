@@ -1,0 +1,24 @@
+a {
+    margin: 15px;
+}
+
+.index {
+    background-color: #F4DFBA;
+}
+
+.pasta {
+    background-color: #BF8B67;
+}
+
+.waffles {
+    background-color: #F6D7A7;
+}
+
+.tacos {
+    background-color: #CA965C;
+}
+
+
+ul {
+    list-style-type: none;
+}
