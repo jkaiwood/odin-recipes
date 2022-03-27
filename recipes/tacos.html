@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Tacos</title>
 </head>
 <body class="tacos">
-    <a href="../index.html">Home</a>
-    <a href="pasta.html">Pasta</a>  
-    <a href="tacos.html">Tacos</a>
-    <a href="waffles.html">Waffles</a>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="pasta.html">Pasta</a>
+        <a href="tacos.html">Tacos</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </div>
    <h1>Tacos</h1> 
    <h2>Description</h2> 
    <p>
@@ -43,6 +49,15 @@
            Once fried  on both sides, remove the tortillas and fold in half to form their shape. </li>
       <li>Fill the taco shells with the cooked beef and any toppings desired. </li>
    </ol>
-
+   <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+                }
+    }
+    </script>
 </body>
 </html>

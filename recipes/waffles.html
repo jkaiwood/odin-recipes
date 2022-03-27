@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles.css">
     <title>Waffles</title>
 </head>
 <body class="waffles">
-    <a href="../index.html">Home</a>
-    <a href="pasta.html">Pasta</a>  
-    <a href="tacos.html">Tacos</a>
-    <a href="waffles.html">Waffles</a>
+    <div class="topnav" id="myTopnav">
+        <a href="../index.html" class="active">Home</a>
+        <a href="pasta.html">Pasta</a>
+        <a href="tacos.html">Tacos</a>
+        <a href="waffles.html">Waffles</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </div>
     <h1>Waffles</h1>
     <h2>Description</h2> 
    <p>
     As a lover of breakfast foods belgian waffles is definitely a favorite. 
-    A buttery waffle with syrup is unmatched in the morning (or any other time of day).
+    A buttery waffle with syrup is unmatched in the morning (or any other time of day).<br>
     This recipe does require a waffle iron to prepare.   
    </p>
    <img src="waffles.jpeg" alt="Plate of waffles" width="350px" height="350px">
@@ -51,6 +57,15 @@
            <p>Then spread butter over the waffle and enjoy!</p>
     
    </ol>
-
+   <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+                }
+    }
+    </script>
 </body>
 </html>
