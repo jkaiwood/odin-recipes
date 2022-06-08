@@ -3,7 +3,12 @@ a {
 }
 
 .index {
-    background-color: #F4DFBA;
+  background-color: #F4DFBA;
+}
+
+.hero-text {
+  display: block;
+  margin-left: 20px;
 }
 
 .pasta {
@@ -18,14 +23,38 @@ a {
     background-color: #FCFFA6;
 }
 
-.index-links {
-    display: flex;
-    align-items: center;
-    margin: 25px;
+.page-images {
+  border-style: groove;
+  border-width: 5px;
+  border-color: black;
 }
 
+.index-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 52px; 
+  text-align: center;
+}
+
+.images {
+  max-width: 360px;
+}
+
+.image-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.index-images {
+  border-style: groove;
+  border-width: 5px;
+  border-color: #C04000;
+} 
+
 .topnav {
-    background-color: #D9CAB3;
+    background-color: inherit;
     overflow: hidden;
   }
   
